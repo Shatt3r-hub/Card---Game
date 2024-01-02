@@ -1,0 +1,80 @@
+        /* https://youtu.be/vio2DJIkPyw */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aquamarine; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    /* padding-top: 5px; */
+    /* padding-bottom: 1px; */
+    width: 80%;
+    /* background-color: purple; */
+}
+
+.padd {
+    padding: 20px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#heart {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.start {
+    margin-top: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.start:hover {
+    background-color: greenyellow;
+    color: rgb(4, 48, 4);
+    font-size: 22px;
+    border: solid;
+}
+.start:active {
+    background-color: green;
+    color: whitesmoke;
+    font-size: 20.8px;
+    border: solid;
+}
+.stop {
+    display: none;
+}
+
+.cards {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    /* grid-template-columns: repeat(5, minmax(130px, 233px)); */
+    /* grid-template-rows: repeat(2, 1fr); */
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.card {
+    height: 290px;
+    background-position: top center;
+    background-size: cover;
+}
+.closed {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+}
